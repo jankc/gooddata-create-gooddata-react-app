@@ -5,6 +5,7 @@ import Logo from "./Logo";
 import styles from "./Header.module.scss";
 import Links from "./Links";
 import Aside from "./Aside";
+import ProjectPicker from "../controls/ProjectPicker";
 
 const VR = ({ ...restProps }) => <div className={styles.VR} {...restProps} />;
 
@@ -62,6 +63,9 @@ const Header = () => {
                     <Logo />
                     <VR />
                     <Links />
+                    <div className={styles.Centered}>
+                        <ProjectPicker />
+                    </div>
                 </>
             )}
             <Aside />

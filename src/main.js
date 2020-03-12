@@ -35,9 +35,6 @@ const performTemplateReplacements = ({ targetDir, sanitizedAppName, domain }) =>
                     value: `backend: "${getDomainWithSchema(domain)}"`,
                 },
             ],
-            "setupProxy.js": [
-                { regex: /developer\.na\.gooddata\.com/g, value: getDomainWithoutSchema(domain) },
-            ],
         },
     };
 
